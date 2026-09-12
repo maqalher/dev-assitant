@@ -1,0 +1,94 @@
+https://platform.claude.com/dashboard
+
+crear package.json:
+    npm init -y
+
+https://gist.github.com/pazteddy/939eb377ec002dde62f052b1c3cc54e9
+reeplazar por el package.json inicial
+crear tsconfig.json y copiar su contenido 
+
+
+estrucura de carpatas
+src
+data
+docs
+issues
+
+https://gist.github.com/pazteddy/df51657235151a469d3a482aa9da0948
+
+crear docs/sample-project/README.md
+crear docs/sample-project/api-reference.md
+crear docs/sample-project/getting-started.md
+
+crear .env
+https://gist.github.com/pazteddy/6d52f1b5487490baccf594f50f38f57d
+
+crear src/types.ts
+crear src/config.ts
+crear src/index.ts
+
+instalar dependencias
+    npm install
+
+ejecutar con
+    npm run dev
+
+crear en src/llm/anthropic-client.ts
+crear en src/llm/prompts.ts
+
+crear en src/chat/conversation.ts
+crear en src/chat/cli.ts  
+*modelo que funciono: claude-sonnet-4-5 
+
+crear en src/excercises/code-reviewer.ts
+ para ejecutar(revisar archivos): npm run review ./src/config.ts
+
+
+Herramientas: https://platform.claude.com/docs/es/agents-and-tools/tool-use/define-tools
+
+crear en src/tools/definitions.ts
+crear en src/tools/executor.ts
+crear en src/tools/agent-loop.ts
+para probar 
+
+RAG 
+https://pazteddy.com/IA-developers/seccion-5-embedding-simulator
+crear en src/embeddings.ts
+crear en src/chunker.ts
+crear en src/vector-store.ts
+crear en src/ingest.ts
+crear en src/retriever.ts
+crear en src/rag-chain.ts
+
+Vector Store
+https://gist.github.com/pazteddy/cf3b5e97f89f6906e538402453313b3e
+better-sqlite3
+    npm install better-sqlite3
+    npm install -D @types/better-sqlite3
+
+sqlite-vec
+    npm install sqlite-vec
+
+para ejecutar 
+    npm run ingest
+
+
+crear src/agent/system-prompt.ts
+crear src/agent/tool-registry.ts
+crear src/agent/agent.ts
+crear src/agent/demo.ts
+
+correr con npm run demo
+
+
+crear src/security/guardrails.ts
+crear src/security/examples.ts
+
+ejecutar examples
+npx tsx src/security/examples.ts
+
+crear src/utils/cost-calculator.ts
+
+crear archivo en raiz .devcontainer/devcontainer.json
+
+crear .devcontainer/post-create.sh
